@@ -72,7 +72,7 @@ You can run the split.ipynb in the Colab.
 
 # Convert
 
-You should save the content(source) song in the path./data/VCTK-Corpus/cs/p229/p229_009.wav. Here you should change the content song's name to p229_009.wav! Also, you should save the content(source) song in the ./data/VCTK-Corpus/cs/p232. Here, you don't need to change the target singer song's name.
+You should save the content(source) song in the path./data/VCTK-Corpus/cs/p229/p229_009.wav. Here you should change the content song's name to p229_009.wav! Also, you should save the content(source) song in the ./data/VCTK-Corpus/cs/p232. Here, you don't need to change the target singer song's name. Make sure that in the p232, there should be only the songs of the singer you want! Clear the directory whenever you want to convert to the different singers.
 
 
 For example: restore model at step 100000.
