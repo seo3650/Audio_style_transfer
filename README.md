@@ -70,6 +70,18 @@ convert.py --resume_iters 200000 --src_spk p262 --trg_spk p272
 
 Or, you can run the convert.ipynb in the Colab.
 
+# Split and Merge .wav file
+
+- We use python library spleeter to split song file to vocal and accompaniment file.
+For example: split song file named song.mp3 and store result in output folder
+```
+spleeter separate -i song.mp3 -o output
+```
+- We use pydub to merge converted file and mr
+
+
+Or, you can run the split.ipynb in the Colab.
+
 
 # Evaluation
 
