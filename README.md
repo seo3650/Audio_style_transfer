@@ -17,7 +17,7 @@ Note that the model architecture is a little different from that of the original
 # Training
 
 **Before Traning**
-You can skip the traning and implement the convert part. If you want to start from the beginning, please delete the "data/VCTK-Corpus" folder.
+You can skip the training and start from the Convert part. If you want to start from the beginning, please delete the "data/VCTK-Corpus" folder.
 
 
 ## Download Dataset
@@ -37,7 +37,7 @@ tar -xzvf VCTK-Corpus.tar.gz -C ./data
 
 ## Preprocess data
 
-We will use Mel-cepstral coefficients(MCEPs) here.
+We will use Mel-cepstral coefficients (MCEPs) here.
 
 ```bash
 python preprocess.py --sample_rate 16000 \
@@ -53,7 +53,7 @@ Or, you can run the preproess.ipynb in the Colab.
 
 ## Train model
 
-Note: you may need to early stop the training process if the training-time test samples sounds good or the you can also see the training loss curves to determine early stop or not.
+Note: you may need to early stop the training process if the training-time test samples sound good or you can also see the training loss curves to determine early stop or not.
 
 ```
 python main.py
@@ -65,12 +65,12 @@ Or, you can run the main.ipynb in the Colab.
 
 # Split and Merge .wav file
 
-- We use python library spleeter to split song file to vocal and accompaniment file.
-For example: split song file named song.mp3 and store result in output folder
+- We use python library spleeter to split song files into vocal and accompaniment files.
+For example, split song file named song.mp3 and store result in the output folder
 ```
 spleeter separate -i song.mp3 -o output
 ```
-- We use pydub to merge converted file and mr
+- We use pydub to merge converted file and MR
 
 
 Or, you can run the split.ipynb in the Colab.
@@ -80,7 +80,7 @@ Or, you can run the split.ipynb in the Colab.
 
 **Important!!**
 * You should save the content(source) song in the path./data/VCTK-Corpus/cs/p229/p229_009.wav. Here you should change the content song's name to p229_009.wav.
-* You should save the content(source) song in the ./data/VCTK-Corpus/cs/p232. Here, you don't need to change the target singer song's name. 
+* You should save the content(source) song in the ./data/VCTK-Corpus/cs/p232. Here, you don't need to change the target singer’s song's name. 
 * Make sure that in the p232, there should be only the songs of the singer you want. Clear the directory whenever you want to convert to the different singers.
 
 
@@ -98,7 +98,9 @@ Or, you can run the convert.ipynb in the Colab.
 
 ## Signal-to-Noise-Ratio (SNR)
 
-We implement the SNR, which evaluate the model's performance with noise. you can run the SNR.ipynb in the Colab.
+We implement the SNR, which evaluates the model's performance with noise. you can run the SNR.ipynb in the Colab.
 
 
 If you want to evaluate your converted song, save your song into the./SNR folder.
+
+
