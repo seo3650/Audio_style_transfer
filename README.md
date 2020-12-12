@@ -60,17 +60,7 @@ Or, you can run the main.ipynb in the Colab.
 # Convert
 
 
-Here, you should have two -> 보컬 샘플 p229~ 등에 저장해서 쓰기.
-For example: restore model at step 200000 and specify the source speaker and target speaker to `p262` and `p272`, respectively.
-
-```
-convert.py --resume_iters 200000 --src_spk p262 --trg_spk p272
-```
-
-
-Or, you can run the convert.ipynb in the Colab.
-
-# Split and Merge .wav file
+## Split and Merge .wav file
 
 - We use python library spleeter to split song file to vocal and accompaniment file.
 For example: split song file named song.mp3 and store result in output folder
@@ -81,6 +71,18 @@ spleeter separate -i song.mp3 -o output
 
 
 Or, you can run the split.ipynb in the Colab.
+
+Here, you should have two -> 보컬 샘플 p229~ 등에 저장해서 쓰기.
+For example: restore model at step 200000 and specify the source speaker and target speaker to `p262` and `p272`, respectively.
+
+```
+convert.py --resume_iters 200000 --src_spk p262 --trg_spk p272
+```
+
+
+Or, you can run the convert.ipynb in the Colab.
+
+
 
 
 # Evaluation
