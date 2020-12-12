@@ -54,15 +54,22 @@ python main.py
 ```
 
 
-Or, you can run the preproess.ipynb in the Colab.
+Or, you can run the main.ipynb in the Colab.
+
 
 # Convert
 
+
+Here, you should have two -> 보컬 샘플 p229~ 등에 저장해서 쓰기.
 For example: restore model at step 200000 and specify the source speaker and target speaker to `p262` and `p272`, respectively.
 
 ```
 convert.py --resume_iters 200000 --src_spk p262 --trg_spk p272
 ```
+
+
+Or, you can run the convert.ipynb in the Colab.
+
 
 # Evaluation
 
