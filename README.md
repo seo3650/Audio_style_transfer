@@ -12,6 +12,7 @@ Note that the model architecture is a little different from that of the original
 * tqdm
 * librosa
 * tensorboardX and tensorboard
+* soundfile
 
 
 # Training
