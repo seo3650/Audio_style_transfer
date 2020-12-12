@@ -64,7 +64,9 @@ For example: restore model at step 200000 and specify the source speaker and tar
 convert.py --resume_iters 200000 --src_spk p262 --trg_spk p272
 ```
 
-# Evaluation: Signal-to-Noise-Ratio (SNR)
+# Evaluation
+
+## Signal-to-Noise-Ratio (SNR)
 
 
 
