@@ -73,7 +73,7 @@ spleeter separate -i song.mp3 -o output
 - We use pydub to merge converted file and mr
 
 
-You can run the split.ipynb in the Colab.
+Or, you can run the split.ipynb in the Colab.
 
 
 # Convert
@@ -94,9 +94,11 @@ convert.py --resume_iters 100000
 Or, you can run the convert.ipynb in the Colab.
 
 
-
-
 # Evaluation
 
 ## Signal-to-Noise-Ratio (SNR)
 
+We implement the SNR, which evaluate the model's performance with noise. you can run the SNR.ipynb in the Colab.
+
+
+If you want to evaluate your converted song, save your song into the./SNR folder.
