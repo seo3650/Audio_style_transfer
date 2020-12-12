@@ -13,7 +13,13 @@ Note that the model architecture is a little different from that of the original
 * librosa
 * tensorboardX and tensorboard
 
+
 # Training
+
+**Before Traning**
+You can skip the traning and implement the convert part. If you want to start from the beginning, please delete the "data/VCTK-Corpus" folder.
+
+
 ## Download Dataset
 
 Download and unzip [VCTK](https://homepages.inf.ed.ac.uk/jyamagis/page3/page58/page58.html) corpus to designated directories.
