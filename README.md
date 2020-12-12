@@ -7,7 +7,7 @@ Note that the model architecture is a little different from that of the original
 
 # Dependencies
 * Python 3.6 (or 3.5)
-* Pytorch 0.4.0
+* Pytorch 1.7.0
 * pyworld
 * tqdm
 * librosa
