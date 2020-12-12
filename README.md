@@ -57,10 +57,7 @@ python main.py
 Or, you can run the main.ipynb in the Colab.
 
 
-# Convert
-
-
-## Split and Merge .wav file
+# Split and Merge .wav file
 
 - We use python library spleeter to split song file to vocal and accompaniment file.
 For example: split song file named song.mp3 and store result in output folder
@@ -70,13 +67,18 @@ spleeter separate -i song.mp3 -o output
 - We use pydub to merge converted file and mr
 
 
-Or, you can run the split.ipynb in the Colab.
+You can run the split.ipynb in the Colab.
 
-Here, you should have two -> 보컬 샘플 p229~ 등에 저장해서 쓰기.
-For example: restore model at step 200000 and specify the source speaker and target speaker to `p262` and `p272`, respectively.
+
+# Convert
+
+You should save the content(source) song in the path./data/VCTK-Corpus/cs/p229/p229_009.wav. Here you should change the content song's name to p229_009.wav! Also, you should save the content(source) song in the ./data/VCTK-Corpus/cs/p232. Here, you don't need to change the target singer song's name.
+
+
+For example: restore model at step 100000.
 
 ```
-convert.py --resume_iters 200000 --src_spk p262 --trg_spk p272
+convert.py --resume_iters 100000
 ```
 
 
@@ -88,7 +90,4 @@ Or, you can run the convert.ipynb in the Colab.
 # Evaluation
 
 ## Signal-to-Noise-Ratio (SNR)
-
-
-
 
